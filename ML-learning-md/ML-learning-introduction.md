@@ -44,9 +44,9 @@
 
 更复杂的是Generation(生成)，产生有结构的复杂东西(例如：文句、图片)。
 
-#### 2. 已经想好找什么函数，怎样告诉机器想找什么样的函数？
+### 2. 已经想好找什么函数，怎样告诉机器想找什么样的函数？
 
-##### 2.1 Supervised Learning 监督学习
+#### 2.1 Supervised Learning 监督学习
 
 假设你心里已经想好找什么样的函数，比如输入一张图片，然后输出类别：
 ![SUpervised Learning](../assets/supervised_learning.png)
@@ -57,7 +57,7 @@
 如果一个函数的Loss值越小，那么他就越接近我们心里的那个函数。
 接下来就是让机器自动找出Loss值最低的函数。
 
-##### 2.2 Reinforcement Learning(强化学习)
+#### 2.2 Reinforcement Learning(强化学习)
 
 *Supervised **VS** Reinforcement*
 对于阿尔法狗的例子来说，如果是Supervised,那么我们就要准备很多的数据：目前棋盘上黑子白字的个数及位置，然后下一步正确的位置是什么？
@@ -65,13 +65,13 @@
 如果是Reinforcement Learning,让机器和机器自己下，或者是让机器和别人下，如果这盘赢了，说明这盘某些步下对了，但没有人告诉它是哪些地方下的不错；如果输了，机器要想办法自己成功率。
 ![Reinforcement](../assets/reinforcement.png)
 
-##### 2.3 Unsupervised Learning 无监督学习
+#### 2.3 Unsupervised Learning 无监督学习
 
 就给机器大量的数据，如大量的图片，机器可以学到什么？
 
-#### 3. 机器怎样找出你想要的函数？
+### 3. 机器怎样找出你想要的函数？
 
-##### 3.1 给定函数寻找范围
+#### 3.1 给定函数寻找范围
 
 **Network Architecture**就是给机器定义一个搜寻范围，让机器在这个范围内寻找最合适的方法。（RNN / CNN）
 
