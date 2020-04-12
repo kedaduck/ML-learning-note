@@ -69,3 +69,33 @@ $$L(w,b) = \sum_{i=1}^{n=10}(\hat{y}^n - (b + w * x_{cp}^n))^2$$
 不需要担心，在Linear regression,没有Local Optimal，随便选一个点，根据Gradient descent 找到的参数是同一组参数。
 最后补充一些偏微分的求导：
 ![pianweifen](../assets/regression/pianweifen.png)
+
+#### 结果是什么？
+**Model : $$y = b + w * x_{cp}$$**
++ b = -188.4
++ w = 2.7
+![train_data_error](../assets/regression/train_data_error.png)
+**Average Error on Training Data = 
+$$\sum_{n=1}^{10}e^n = 31.9$$**
+但是这个是training data 的error,并不是我们真正关心的error,我们应该拿test data 测试
+![test_data](../assets/regression/test_data.png)
+**Average Error on Testing Data =
+$$\sum_{n = 1}^{10}e^n = 35.0$$\> Average Error on Training Data**
+想要做的更改可以设计更好的Model。How can we do better?
+#### Select Another Model:
+##### 1. 举例来说我们可能需要引入二次式
+##### $$y = b + w_1 * x_{cp} + w_2 * (x_{cp})^2 $$
+得出的结果是
++ $b = -10.3$
++ $w_1 = 1.0, w_2 = 2.7 * 10 ^{-3}$
+其函数图像如下：
+![another_model](../assets/regression/another_model_2.png)
+在Training data 上算的Average Error = 15.4
+在Testing data 上算的Average Error = 18.4
+##### 2. 引入三次式
+##### $$y = b + w_1 * x_{cp} + w_2 * (x_{cp})^2 + w_3 * (x_{cp})^3$$
+得出的结果是：
++ $b = 6.4, w_1 = 0.66$
++ $w_2 = 4.3 * 10^{-3}$
++ $w_3 = -1.8 * 10^{-6}$
+
