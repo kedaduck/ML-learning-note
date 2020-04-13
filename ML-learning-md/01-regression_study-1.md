@@ -194,3 +194,7 @@ If some noises corrupt input x_i when testing A smoother function has less influ
 ### Conclusion  
 
 宝可梦进化前后的CP值是有关系的，但是还有可能有其他的factors。
+
+### Question
+
+![question](../assets/regression/question.png)
